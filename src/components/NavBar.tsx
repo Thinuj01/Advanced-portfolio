@@ -18,7 +18,7 @@ export default function NavBar() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="w-full bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 shadow-md shadow-gray-350 dark:shadow-red-900 fixed top-0 left-0 z-50">
+    <nav className="w-full bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 shadow-md shadow-gray-350 dark:shadow-red-900 fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link
           href="/"

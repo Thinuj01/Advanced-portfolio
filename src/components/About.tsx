@@ -73,7 +73,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full min-h-screen py-20 px-6 bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900"
+      className="w-full min-h-screen py-20 px-6 bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900"
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
@@ -94,7 +94,7 @@ export default function About() {
             transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
           >
             {allSkills.concat(allSkills).map((icon, idx) => (
-              <div key={idx} className="flex-shrink-0">
+              <div key={idx} className="shrink-0">
                 {icon}
               </div>
             ))}

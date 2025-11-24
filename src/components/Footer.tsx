@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 text-gray-300 py-6 flex flex-col items-center gap-3 mt-12 shadow-lg dark:shadow-red-900/40">
+    <footer className="w-full bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 text-gray-300 py-6 flex flex-col items-center gap-3 mt-12 shadow-lg dark:shadow-red-900/40">
       
       <div className="flex gap-6">
         <a

@@ -1,8 +1,8 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -22,7 +22,10 @@ const projects: Project[] = [
       "https://res.cloudinary.com/diiaeojyn/image/upload/v1763807393/1733074015084_okb2xu.jpg",
     links: [
       { type: "github", url: "https://github.com/Thinuj01/RenItNew" },
-      { type: "linkedin", url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/" },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/",
+      },
     ],
   },
   {
@@ -34,7 +37,10 @@ const projects: Project[] = [
       "https://res.cloudinary.com/diiaeojyn/image/upload/v1763807393/1740051154319_zhfksc.jpg",
     links: [
       { type: "github", url: "https://github.com/Thinuj01/Evently" },
-      { type: "linkedin", url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/" },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/",
+      },
     ],
   },
   {
@@ -45,8 +51,11 @@ const projects: Project[] = [
     image:
       "https://res.cloudinary.com/diiaeojyn/image/upload/v1763807393/1742271027387_jw4ewe.jpg",
     links: [
-        { type: "github", url: "https://github.com/Thinuj01/spendwise-new" },
-        { type: "linkedin", url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/" },
+      { type: "github", url: "https://github.com/Thinuj01/spendwise-new" },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/",
+      },
     ],
   },
   {
@@ -65,10 +74,13 @@ const projects: Project[] = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     image:
       "https://res.cloudinary.com/diiaeojyn/image/upload/v1763807392/1755591200488_mz4spk.jpg",
-      links: [
-        { type: "github", url: "https://github.com/Thinuj01/chatty-fe" },
-        { type: "github", url: "https://github.com/Thinuj01/Chatty-Bkd" },
-        { type: "linkedin", url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/" },
+    links: [
+      { type: "github", url: "https://github.com/Thinuj01/chatty-fe" },
+      { type: "github", url: "https://github.com/Thinuj01/Chatty-Bkd" },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/",
+      },
     ],
   },
   {
@@ -78,11 +90,14 @@ const projects: Project[] = [
     technologies: ["React", ".NET", "PostgreSQL"],
     image:
       "https://res.cloudinary.com/diiaeojyn/image/upload/v1763807393/Cream_Modern_Interior_Design_Business_Presentation_ksby45.jpg",
-      links: [
-        { type: "github", url: "https://github.com/Thinuj01/pinklet-web-be" },
-        { type: "github", url: "https://github.com/Thinuj01/pinklet-web-fe" },
-        { type: "linkedin", url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/" },
-        { type: "youtube", url: "https://www.youtube.com/watch?v=34JQLvnK1P8" },
+    links: [
+      { type: "github", url: "https://github.com/Thinuj01/pinklet-web-be" },
+      { type: "github", url: "https://github.com/Thinuj01/pinklet-web-fe" },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/in/thinuja-hettiarachchi/details/projects/",
+      },
+      { type: "youtube", url: "https://www.youtube.com/watch?v=34JQLvnK1P8" },
     ],
   },
 ];
@@ -104,7 +119,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="w-full min-h-screen py-20 px-6 bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900"
+      className="w-full min-h-screen py-20 px-6 bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900"
     >
       <div className="max-w-7xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 text-center mb-12">
@@ -123,11 +138,14 @@ export default function Projects() {
               className="rounded-xl bg-white/40 dark:bg-black/40 backdrop-blur-lg shadow-lg border border-gray-300 dark:border-gray-700 hover:shadow-xl transition-all cursor-pointer overflow-hidden flex flex-col"
             >
               {/* Top Image */}
-              <div className="w-full h-36 overflow-hidden">
-                <img
+              <div className="w-full h-36 relative">
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority
                 />
               </div>
 

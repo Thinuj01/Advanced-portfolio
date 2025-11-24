@@ -8,11 +8,11 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <section id="home" className="w-full relative flex flex-col items-center justify-center min-h-screen px-6 bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 overflow-hidden">
+    <section id="home" className="w-full relative flex flex-col items-center justify-center min-h-screen px-6 bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 overflow-hidden">
 
       {/* Profile Photo */}
       <motion.div
-        className="relative w-40 h-40 mb-6 rounded-full overflow-hidden border-4 dark:border-red-800 border-gray-700 flex-shrink-0"
+        className="relative w-40 h-40 mb-6 rounded-full overflow-hidden border-4 dark:border-red-800 border-gray-700 shrink-0"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}

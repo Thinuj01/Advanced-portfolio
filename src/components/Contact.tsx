@@ -23,7 +23,7 @@ export default function Contact() {
     visible: { opacity: 1, y: 0 },
   };
 
-  const sendEmail = async (values: any, resetForm: () => void) => {
+  const sendEmail = async (values: { name: string; email: string; message: string }, resetForm: () => void) => {
     setLoading(true);
     setSuccess(false);
 
@@ -52,7 +52,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 px-6 py-20"
+      className="w-full min-h-screen flex items-center justify-center bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900 px-6 py-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}

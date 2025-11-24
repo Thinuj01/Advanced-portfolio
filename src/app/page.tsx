@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full font-sans bg-gradient-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900">
+    <div className="flex flex-col w-full font-sans bg-linear-to-r from-gray-400 to-gray-50 dark:from-black dark:to-red-900">
         <Hero />
         <About />
         <Projects />
