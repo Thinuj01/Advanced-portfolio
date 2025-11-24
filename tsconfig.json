@@ -18,12 +18,10 @@
         "name": "next"
       }
     ],
-    "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@/components/*": ["components/*"],
-      "@/hooks/*": ["hooks/*"]
+      "@/components/*": ["/.components/*"],
+      "@/hooks/*": ["/.hooks/*"]
     }
   },
   "include": [
