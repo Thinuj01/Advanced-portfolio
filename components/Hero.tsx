@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
