@@ -69,7 +69,7 @@ export default function Hero() {
           <Button
             variant="default"
             size="lg"
-            onClick={() => window.open("/Aspiring_Software_Engineer_Resume.pdf")}
+            onClick={() => window.open("/T. J. Hettiarachchi.pdf", "_blank")}
           >
             Download Resume
           </Button>

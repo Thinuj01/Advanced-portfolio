@@ -52,10 +52,10 @@ const projects: Project[] = [
   {
     title: "Portfolio",
     description:
-      "A modern portfolio built with React & Vite, featuring animations, responsive UI, and an EmailJS contact form.",
-    technologies: ["React"],
+      "A modern portfolio built with NextJS, featuring animations, responsive UI, and an EmailJS contact form.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     image:
-      "https://res.cloudinary.com/diiaeojyn/image/upload/v1763807393/1733074015084_okb2xu.jpg",
+      "https://res.cloudinary.com/diiaeojyn/image/upload/v1763960062/portfolio_xt4kqo.png",
     links: [],
   },
   {
